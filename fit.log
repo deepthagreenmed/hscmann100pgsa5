@@ -1,0 +1,36 @@
+
+
+*******************************************************************************
+Mon Jul 15 18:36:53 2024
+
+
+FIT:    data read from 'pressure_data.txt' using 1:2
+        format = x:z
+        #datapoints = 12
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = m*x + c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 5.9157181700e+08   0.00e+00  5.00e+03    1.000000e+00   1.000000e+00
+   7 8.8022095120e+00  -1.36e-01  5.00e-04    7.643857e-03  -8.724561e+00
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 8.80221
+rel. change during last iteration : -1.36455e-06
+
+degrees of freedom    (FIT_NDF)                        : 10
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.938201
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.880221
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 0.00764386       +/- 0.0001192    (1.559%)
+c               = -8.72456         +/- 0.842        (9.651%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.947  1.000 
