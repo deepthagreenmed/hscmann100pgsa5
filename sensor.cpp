@@ -49,7 +49,7 @@ float sensor::convert()
 
     qDebug()<<rx[0]<<rx[1];
 
-    sample = (uint16_t)(((rx[1] & 0x3F) << 8) | (rx[0] & 0xFF));
+    sample = (uint16_t)(((rx[0] & 0x3F) << 8) | (rx[1] & 0xFF));
     qDebug()<<sample;
 
     return sample;
