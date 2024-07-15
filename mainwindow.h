@@ -6,6 +6,9 @@
 #include <QMainWindow>
 #include <QTimer>
 
+#define MIN_COUNT   1638.4
+#define MAX_COUNT   14745.6
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
