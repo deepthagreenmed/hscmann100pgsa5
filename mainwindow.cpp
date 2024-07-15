@@ -23,6 +23,6 @@ void MainWindow::updateLabel()
 {
     float sample=s->convert();
     ui->label->setText(QString::number(sample));
-    float pressure = static_cast<float>(0.01*sample-8.72);
-    ui->label_2->setText(QString::number(pressure));
+    float psi = static_cast<float>(0.01*sample-8.72);
+    ui->label_2->setText(QString::number(psi));
 }
