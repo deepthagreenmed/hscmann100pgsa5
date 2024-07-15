@@ -46,7 +46,7 @@ float sensor::convert()
 
     /* send the cmd to start the conversion and read the result */
     ioctl(spi_fd, SPI_IOC_MESSAGE(1), &tr);
-
+    usleep(100000);
     qDebug()<<rx[0]<<rx[1];
 
     sample = (uint16_t)(((rx[0] & 0x3F) << 8) | (rx[1] & 0xFF));
